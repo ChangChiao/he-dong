@@ -55,7 +55,7 @@ export default function PortfolioSection() {
             </span>
             <span className="h-0.5 w-10 bg-gold" />
           </div>
-          <h2 className="font-[family-name:var(--font-noto-serif-tc)] text-3xl font-bold tracking-[2px] text-cream-dark md:text-[42px]">
+          <h2 className="font-serif-tc text-3xl font-bold tracking-[2px] text-cream-dark md:text-[42px]">
             匠心獨具的藝術傳承
           </h2>
           <p className="text-base text-tan">
@@ -82,14 +82,14 @@ export default function PortfolioSection() {
 
         {/* Grid - masonry style with 2 columns */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {portfolioItems.map((item) => (
+          {portfolioItems.filter((item) => item.category === active).map((item) => (
             <div
               key={item.title}
               className="group overflow-hidden bg-brown-mid"
             >
               <div
                 className={`relative w-full overflow-hidden ${
-                  item.tall ? "h-[280px] sm:h-[280px]" : "h-[200px] sm:h-[200px]"
+                  item.tall ? "h-[280px]" : "h-[200px]"
                 }`}
               >
                 <Image
@@ -102,7 +102,7 @@ export default function PortfolioSection() {
                 />
               </div>
               <div className="flex flex-col gap-2 px-6 py-5">
-                <h3 className="font-[family-name:var(--font-noto-serif-tc)] text-lg font-semibold text-cream-dark">
+                <h3 className="font-serif-tc text-lg font-semibold text-cream-dark">
                   {item.title}
                 </h3>
                 <p className="text-[13px] text-tan">{item.desc}</p>

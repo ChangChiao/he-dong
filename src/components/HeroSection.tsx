@@ -22,11 +22,11 @@ export default function HeroSection() {
           創立於 1968 年
         </span>
 
-        <h1 className="font-[family-name:var(--font-noto-serif-tc)] text-4xl font-bold tracking-[4px] text-cream-dark md:text-6xl lg:text-[72px] lg:tracking-[8px]">
+        <h1 className="font-serif-tc text-4xl font-bold tracking-[4px] text-cream-dark md:text-6xl lg:text-[72px] lg:tracking-[8px]">
           匠心雕琢，傳遞神聖
         </h1>
 
-        <p className="font-[family-name:var(--font-noto-serif-tc)] text-xl tracking-[6px] text-gold md:text-2xl lg:text-4xl lg:tracking-[12px]">
+        <p className="font-serif-tc text-xl tracking-[6px] text-gold md:text-2xl lg:text-4xl lg:tracking-[12px]">
           永豐佛具店
         </p>
 

@@ -1,9 +1,4 @@
-const navItems = [
-  { label: "關於我們", href: "#about" },
-  { label: "作品精選", href: "#portfolio" },
-  { label: "蒞臨參觀", href: "#location" },
-  { label: "聯繫我們", href: "#contact" },
-];
+import { navItems } from "@/constants/navigation";
 
 export default function Footer() {
   return (
@@ -12,7 +7,7 @@ export default function Footer() {
         {/* Top */}
         <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div className="flex flex-col gap-3">
-            <span className="font-[family-name:var(--font-noto-serif-tc)] text-2xl font-bold tracking-[4px] text-gold">
+            <span className="font-serif-tc text-2xl font-bold tracking-[4px] text-gold">
               永豐佛具店
             </span>
             <span className="text-sm text-tan">匠心雕琢・傳遞神聖</span>

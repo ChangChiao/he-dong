@@ -2,13 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-
-const navItems = [
-  { label: "關於我們", href: "#about" },
-  { label: "作品精選", href: "#portfolio" },
-  { label: "蒞臨參觀", href: "#location" },
-  { label: "聯繫我們", href: "#contact" },
-];
+import { navItems } from "@/constants/navigation";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +12,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a
           href="#"
-          className="font-[family-name:var(--font-noto-serif-tc)] text-xl font-bold tracking-[4px] text-gold"
+          className="font-serif-tc text-xl font-bold tracking-[4px] text-gold"
         >
           永豐佛具店
         </a>

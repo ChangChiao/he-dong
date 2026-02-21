@@ -31,7 +31,7 @@ export default function AboutSection() {
             </span>
           </div>
 
-          <h2 className="font-[family-name:var(--font-noto-serif-tc)] text-3xl font-bold tracking-[2px] text-brown md:text-[42px]">
+          <h2 className="font-serif-tc text-3xl font-bold tracking-[2px] text-brown md:text-[42px]">
             傳承三代的匠人精神
           </h2>
 
@@ -50,7 +50,7 @@ export default function AboutSection() {
           <div className="flex flex-wrap gap-8 pt-2 sm:gap-12">
             {features.map((feat) => (
               <div key={feat.label} className="flex flex-col gap-2">
-                <span className="font-[family-name:var(--font-noto-serif-tc)] text-3xl font-bold text-gold md:text-4xl">
+                <span className="font-serif-tc text-3xl font-bold text-gold md:text-4xl">
                   {feat.number}
                 </span>
                 <span className="text-sm text-brown-text">{feat.label}</span>
