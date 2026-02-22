@@ -33,7 +33,7 @@ export default function HeroSection() {
         <p className="max-w-[600px] text-base leading-[1.8] text-tan-light md:text-lg">
           承襲三代職人工藝，以虔誠之心雕琢每一尊神像
           <br className="hidden md:block" />
-          為您的信仰空間注入莊嚴與靈性
+          從木料到成品追求完美細節
         </p>
 
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">
