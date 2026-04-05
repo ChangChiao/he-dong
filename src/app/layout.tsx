@@ -102,7 +102,7 @@ export default function RootLayout({
                 latitude: 25.0375,
                 longitude: 121.5015,
               },
-              telephone: "02-2302-1688",
+              telephone: "04-7552815",
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: [

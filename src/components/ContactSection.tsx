@@ -34,10 +34,10 @@ export default function ContactSection() {
                 <div className="flex flex-col gap-1">
                   <span className="text-[13px] text-tan">服務專線</span>
                   <a
-                    href="tel:02-2302-1688"
+                    href="tel:04-7552815"
                     className="text-lg font-semibold text-brown"
                   >
-                    02-2302-1688
+                    04-7552815
                   </a>
                 </div>
               </div>
@@ -45,9 +45,14 @@ export default function ContactSection() {
                 <MessageCircle className="h-6 w-6 text-gold" />
                 <div className="flex flex-col gap-1">
                   <span className="text-[13px] text-tan">LINE 官方帳號</span>
-                  <span className="text-lg font-semibold text-brown">
-                    @yongfeng-buddha
-                  </span>
+                  <a
+                    href="https://line.me/ti/p/~hedong"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-semibold text-brown"
+                  >
+                    @hedong
+                  </a>
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="relative flex h-screen min-h-[600px] items-center justify-center">
       {/* Background image */}
       <Image
-        src="/images/hero-bg.jpg"
+        src="/images/cover.webp"
         alt="和東雕刻佛具行工作室內手工雕刻神像場景"
         fill
         priority

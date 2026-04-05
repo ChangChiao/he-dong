@@ -4,7 +4,7 @@ const locationInfo = [
   {
     icon: MapPin,
     label: "店址",
-    text: "台北市萬華區貴陽街二段 168 號",
+    text: "彰化縣和美鎮美寮路2段691號",
   },
   {
     icon: Clock3,
@@ -31,7 +31,7 @@ export default function LocationSection() {
           ) : (
             <div className="flex h-full w-full items-center justify-center">
               <a
-                href="https://maps.google.com/?q=台北市萬華區貴陽街二段168號"
+                href="https://maps.google.com/?q=彰化縣和美鎮美寮路2段691號"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-tan-light underline hover:text-gold"
