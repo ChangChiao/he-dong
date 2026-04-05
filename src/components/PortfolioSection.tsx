@@ -2,43 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-
-const categories = ["全新神像", "神像粉身", "訂製神像", "佛具零售"];
-
-const portfolioItems = [
-  {
-    title: "媽祖金身神像",
-    desc: "台灣檜木 · 高度 120cm",
-    image: "/images/portfolio-1.jpg",
-    alt: "手工雕刻媽祖金身神像，台灣檜木材質，高度120公分",
-    category: "木雕神像",
-    tall: true,
-  },
-  {
-    title: "關聖帝君",
-    desc: "樟木 · 高度 90cm",
-    image: "/images/portfolio-2.jpg",
-    alt: "手工雕刻關聖帝君神像，樟木材質，高度90公分",
-    category: "木雕神像",
-    tall: false,
-  },
-  {
-    title: "觀世音菩薩",
-    desc: "白玉石雕 · 高度 60cm",
-    image: "/images/portfolio-3.jpg",
-    alt: "白玉石雕觀世音菩薩像，高度60公分",
-    category: "石雕藝術",
-    tall: false,
-  },
-  {
-    title: "釋迦牟尼佛",
-    desc: "台灣檜木貼金箔 · 高度 150cm",
-    image: "/images/portfolio-4.jpg",
-    alt: "手工雕刻釋迦牟尼佛像，台灣檜木貼金箔，高度150公分",
-    category: "木雕神像",
-    tall: true,
-  },
-];
+import Link from "next/link";
+import { portfolioItems, categories } from "@/constants/portfolio";
 
 export default function PortfolioSection() {
   const [active, setActive] = useState("木雕神像");
@@ -82,8 +47,9 @@ export default function PortfolioSection() {
         {/* Grid - masonry style with 2 columns */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {portfolioItems.filter((item) => item.category === active).map((item) => (
-            <div
-              key={item.title}
+            <Link
+              key={item.slug}
+              href={`/portfolio/${item.slug}`}
               className="group overflow-hidden bg-brown-mid"
             >
               <div
@@ -105,7 +71,7 @@ export default function PortfolioSection() {
                 </h3>
                 <p className="text-[13px] text-tan">{item.desc}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

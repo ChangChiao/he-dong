@@ -55,7 +55,7 @@ export default function LocationSection() {
             店址與營業時間
           </h2>
 
-          <div className="flex flex-col gap-7">
+          <address className="flex flex-col gap-7 not-italic">
             {locationInfo.map((item) => (
               <div key={item.label} className="flex gap-4">
                 <item.icon className="mt-1 h-6 w-6 shrink-0 text-gold" />
@@ -67,7 +67,7 @@ export default function LocationSection() {
                 </div>
               </div>
             ))}
-          </div>
+          </address>
         </div>
       </div>
     </section>
