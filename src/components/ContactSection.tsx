@@ -27,7 +27,7 @@ export default function ContactSection() {
           <div className="flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-5">
               <h3 className="font-serif-tc text-2xl font-bold text-brown">
-                快速聯繫
+                聯繫我們
               </h3>
               <div className="flex items-center gap-4">
                 <Phone className="h-6 w-6 text-gold" />
@@ -41,27 +41,15 @@ export default function ContactSection() {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <MessageCircle className="h-6 w-6 text-gold" />
-                <div className="flex flex-col gap-1">
+              <div className="flex flex-col items-center gap-2">
+                <div className="flex items-center gap-4">
+                  <MessageCircle className="h-6 w-6 text-gold" />
                   <span className="text-[13px] text-tan">LINE 官方帳號</span>
-                  <a
-                    href="https://line.me/ti/p/~hedong"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-lg font-semibold text-brown"
-                  >
-                    @hedong
-                  </a>
                 </div>
+                <img src="https://qr-official.line.me/gs/M_446sdrma_GW.png?oat_content=qr" alt="LINE QR Code" className="w-48" />
               </div>
             </div>
 
-            <div className="flex flex-col items-center gap-4">
-              <h3 className="font-serif-tc text-2xl font-bold text-brown">
-                追蹤我們
-              </h3>
-            </div>
           </div>
         </div>
       </div>

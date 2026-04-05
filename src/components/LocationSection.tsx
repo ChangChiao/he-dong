@@ -9,7 +9,7 @@ const locationInfo = [
   {
     icon: Clock3,
     label: "營業時間",
-    text: "週一至週六 09:00 - 18:00\n週日公休",
+    text: "週一至週日 12:00 - 21:00",
   },
 ];
 
