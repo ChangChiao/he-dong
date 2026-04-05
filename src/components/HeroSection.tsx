@@ -19,7 +19,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center gap-8 px-6 text-center md:gap-10">
         <span className="bg-gold px-6 py-2 text-sm font-medium tracking-[2px] text-brown-dark">
-          創立於 1968 年
+          創立於 1950 年
         </span>
 
         <h1 className="font-serif-tc text-4xl font-bold tracking-[4px] text-cream-dark md:text-6xl lg:text-[72px] lg:tracking-[8px]">
@@ -31,9 +31,9 @@ export default function HeroSection() {
         </p>
 
         <p className="max-w-[600px] text-base leading-[1.8] text-tan-light md:text-lg">
-          承襲三代職人工藝，以虔誠之心雕琢每一尊神像
+          傳承工藝，誠心禮佛
           <br className="hidden md:block" />
-          從木料到成品追求完美細節
+          和東佛具店 — 真材實料・細膩工法
         </p>
 
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">

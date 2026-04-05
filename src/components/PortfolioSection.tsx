@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const categories = ["木雕神像", "石雕藝術", "佛龕桌圍", "祭祀禮器"];
+const categories = ["全新神像", "神像粉身", "訂製神像", "佛具零售"];
 
 const portfolioItems = [
   {
@@ -69,11 +69,10 @@ export default function PortfolioSection() {
             <button
               key={cat}
               onClick={() => setActive(cat)}
-              className={`px-6 py-3 text-sm transition-colors ${
-                active === cat
+              className={`px-6 py-3 text-sm transition-colors ${active === cat
                   ? "bg-gold font-medium text-brown"
                   : "border border-tan text-tan hover:border-gold hover:text-gold"
-              }`}
+                }`}
             >
               {cat}
             </button>
@@ -88,9 +87,8 @@ export default function PortfolioSection() {
               className="group overflow-hidden bg-brown-mid"
             >
               <div
-                className={`relative w-full overflow-hidden ${
-                  item.tall ? "h-[280px]" : "h-[200px]"
-                }`}
+                className={`relative w-full overflow-hidden ${item.tall ? "h-[280px]" : "h-[200px]"
+                  }`}
               >
                 <Image
                   src={item.image}

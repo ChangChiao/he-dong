@@ -56,26 +56,9 @@ export default function ContactSection() {
               <h3 className="font-serif-tc text-2xl font-bold text-brown">
                 追蹤我們
               </h3>
-              <div className="flex gap-4">
-                {[
-                  { icon: Facebook, label: "Facebook" },
-                  { icon: Instagram, label: "Instagram" },
-                  { icon: Youtube, label: "YouTube" },
-                ].map((social) => (
-                  <a
-                    key={social.label}
-                    href="#"
-                    aria-label={social.label}
-                    className="flex h-12 w-12 items-center justify-center bg-brown text-cream-dark transition-colors hover:bg-gold hover:text-brown-dark"
-                  >
-                    <social.icon className="h-6 w-6" />
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }
