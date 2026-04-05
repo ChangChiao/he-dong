@@ -14,7 +14,7 @@ export default function Header() {
           href="#"
           className="font-serif-tc text-xl font-bold tracking-[4px] text-gold"
         >
-          永豐佛具店
+          和東雕刻佛具行
         </a>
 
         {/* Desktop nav */}

@@ -6,7 +6,7 @@ export default function HeroSection() {
       {/* Background image */}
       <Image
         src="/images/hero-bg.jpg"
-        alt="永豐佛具店工作室內手工雕刻神像場景"
+        alt="和東雕刻佛具行工作室內手工雕刻神像場景"
         fill
         priority
         className="object-cover"
@@ -27,13 +27,13 @@ export default function HeroSection() {
         </h1>
 
         <p className="font-serif-tc text-xl tracking-[6px] text-gold md:text-2xl lg:text-4xl lg:tracking-[12px]">
-          永豐佛具店
+          和東雕刻佛具行
         </p>
 
         <p className="max-w-[600px] text-base leading-[1.8] text-tan-light md:text-lg">
           傳承工藝，誠心禮佛
           <br className="hidden md:block" />
-          和東佛具店 — 真材實料・細膩工法
+          和東雕刻佛具行 — 真材實料・細膩工法
         </p>
 
         <div className="flex flex-col gap-4 sm:flex-row sm:gap-6">

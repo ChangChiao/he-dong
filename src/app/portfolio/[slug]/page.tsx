@@ -21,10 +21,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const baseUrl = "https://www.yongfeng-buddha.com.tw";
 
   return {
-    title: `${item.title}｜永豐佛具店作品精選`,
+    title: `${item.title}｜和東雕刻佛具行作品精選`,
     description: item.detail,
     openGraph: {
-      title: `${item.title}｜永豐佛具店作品精選`,
+      title: `${item.title}｜和東雕刻佛具行作品精選`,
       description: item.detail,
       url: `${baseUrl}/portfolio/${item.slug}`,
       images: [
@@ -37,11 +37,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ],
       locale: "zh_TW",
       type: "article",
-      siteName: "永豐佛具店",
+      siteName: "和東雕刻佛具行",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${item.title}｜永豐佛具店作品精選`,
+      title: `${item.title}｜和東雕刻佛具行作品精選`,
       description: item.detail,
       images: [`${baseUrl}${item.image}`],
     },
@@ -68,11 +68,11 @@ export default async function PortfolioDetailPage({ params }: Props) {
     material: item.material,
     brand: {
       "@type": "Brand",
-      name: "永豐佛具店",
+      name: "和東雕刻佛具行",
     },
     manufacturer: {
       "@type": "Organization",
-      name: "永豐佛具店",
+      name: "和東雕刻佛具行",
       url: "https://www.yongfeng-buddha.com.tw",
     },
     breadcrumb: {

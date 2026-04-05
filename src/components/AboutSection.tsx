@@ -14,7 +14,7 @@ export default function AboutSection() {
         <div className="relative aspect-[500/450] w-full max-w-[500px] shrink-0 overflow-hidden">
           <Image
             src="/images/about.jpg"
-            alt="永豐佛具店師傅手工雕刻木雕神像過程"
+            alt="和東雕刻佛具行師傅手工雕刻木雕神像過程"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 500px"
@@ -37,7 +37,7 @@ export default function AboutSection() {
 
           <div className="space-y-6 text-base leading-[1.9] text-brown-text">
             <p>
-              永豐佛具店創立於1946年，歷經三代傳承，始終秉持「以誠為本、精雕細琢」的理念。
+              和東雕刻佛具行創立於1946年，歷經三代傳承，始終秉持「以誠為本、精雕細琢」的理念。
             </p>
             <p>
               由資深師傅手工雕刻每一尊神像。從選材、設計到完工，每個環節都經過嚴格把關，只為呈現最莊嚴的神聖之美。

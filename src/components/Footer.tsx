@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div className="flex flex-col gap-3">
             <span className="font-serif-tc text-2xl font-bold tracking-[4px] text-gold">
-              永豐佛具店
+              和東雕刻佛具行
             </span>
             <span className="text-sm text-tan">匠心雕琢・傳遞神聖</span>
           </div>
@@ -31,7 +31,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
           <p className="text-[13px] text-brown-light">
-            &copy; {new Date().getFullYear()} 永豐佛具店 版權所有
+            &copy; {new Date().getFullYear()} 和東雕刻佛具行 版權所有
           </p>
           <p className="text-[13px] text-brown-light">
             隱私權政策｜使用條款

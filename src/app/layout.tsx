@@ -17,9 +17,9 @@ const notoSansTC = Noto_Sans_TC({
 });
 
 export const metadata: Metadata = {
-  title: "永豐佛具店｜台北萬華神像雕刻・佛具店推薦｜傳承三代匠人工藝",
+  title: "和東雕刻佛具行｜台北萬華神像雕刻・佛具店推薦｜傳承三代匠人工藝",
   description:
-    "永豐佛具店創立於1968年，專營手工木雕神像、石雕藝術、佛龕桌圍、祭祀禮器。台北萬華在地老店，傳承三代職人工藝，台灣檜木手工雕刻，量身訂製。",
+    "和東雕刻佛具行創立於1968年，專營手工木雕神像、石雕藝術、佛龕桌圍、祭祀禮器。台北萬華在地老店，傳承三代職人工藝，台灣檜木手工雕刻，量身訂製。",
   keywords: [
     "台北神像雕刻",
     "萬華佛具店推薦",
@@ -30,28 +30,28 @@ export const metadata: Metadata = {
     "佛龕桌圍",
     "祭祀禮器",
     "石雕藝術",
-    "永豐佛具店",
+    "和東雕刻佛具行",
   ],
   openGraph: {
-    title: "永豐佛具店｜台北萬華神像雕刻・傳承三代匠人工藝",
+    title: "和東雕刻佛具行｜台北萬華神像雕刻・傳承三代匠人工藝",
     description:
       "創立於1968年，專營手工木雕神像、石雕藝術、佛龕桌圍。台灣檜木手工雕刻，量身訂製。",
     locale: "zh_TW",
     type: "website",
-    siteName: "永豐佛具店",
+    siteName: "和東雕刻佛具行",
     url: "https://www.yongfeng-buddha.com.tw",
     images: [
       {
         url: "https://www.yongfeng-buddha.com.tw/images/og_image.png",
         width: 1200,
         height: 630,
-        alt: "永豐佛具店｜台北萬華傳承三代匠人工藝",
+        alt: "和東雕刻佛具行｜台北萬華傳承三代匠人工藝",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "永豐佛具店｜台北萬華神像雕刻・傳承三代匠人工藝",
+    title: "和東雕刻佛具行｜台北萬華神像雕刻・傳承三代匠人工藝",
     description:
       "創立於1968年，專營手工木雕神像、石雕藝術、佛龕桌圍。台灣檜木手工雕刻，量身訂製。",
     images: ["https://www.yongfeng-buddha.com.tw/images/og_image.png"],
@@ -80,7 +80,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Store",
               "@id": "https://www.yongfeng-buddha.com.tw/#store",
-              name: "永豐佛具店",
+              name: "和東雕刻佛具行",
               description:
                 "傳承三代職人工藝，專營手工木雕神像、石雕藝術、佛龕桌圍、祭祀禮器",
               url: "https://www.yongfeng-buddha.com.tw",

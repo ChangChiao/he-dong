@@ -26,7 +26,7 @@ export default function LocationSection() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="永豐佛具店地圖位置"
+              title="和東雕刻佛具行地圖位置"
             />
           ) : (
             <div className="flex h-full w-full items-center justify-center">
