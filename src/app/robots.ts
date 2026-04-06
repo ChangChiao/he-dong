@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.yongfeng-buddha.com.tw/sitemap.xml",
+    sitemap: "https://www.hedong888.com/sitemap.xml",
   };
 }

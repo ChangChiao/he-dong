@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const item = portfolioItems.find((i) => i.slug === slug);
   if (!item) return {};
 
-  const baseUrl = "https://www.yongfeng-buddha.com.tw";
+  const baseUrl = "https://www.hedong888.com";
 
   return {
     title: `${item.title}｜和東雕刻佛具行作品精選`,
@@ -64,7 +64,7 @@ export default async function PortfolioDetailPage({ params }: Props) {
     "@type": "Product",
     name: item.title,
     description: item.detail,
-    image: `https://www.yongfeng-buddha.com.tw${item.image}`,
+    image: `https://www.hedong888.com${item.image}`,
     material: item.material,
     brand: {
       "@type": "Brand",
@@ -73,7 +73,7 @@ export default async function PortfolioDetailPage({ params }: Props) {
     manufacturer: {
       "@type": "Organization",
       name: "和東雕刻佛具行",
-      url: "https://www.yongfeng-buddha.com.tw",
+      url: "https://www.hedong888.com",
     },
     breadcrumb: {
       "@type": "BreadcrumbList",
@@ -82,19 +82,19 @@ export default async function PortfolioDetailPage({ params }: Props) {
           "@type": "ListItem",
           position: 1,
           name: "首頁",
-          item: "https://www.yongfeng-buddha.com.tw",
+          item: "https://www.hedong888.com",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "作品精選",
-          item: "https://www.yongfeng-buddha.com.tw/#portfolio",
+          item: "https://www.hedong888.com/#portfolio",
         },
         {
           "@type": "ListItem",
           position: 3,
           name: item.title,
-          item: `https://www.yongfeng-buddha.com.tw/portfolio/${item.slug}`,
+          item: `https://www.hedong888.com/portfolio/${item.slug}`,
         },
       ],
     },
