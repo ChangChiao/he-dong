@@ -25,13 +25,14 @@ export default function ContactSection() {
         <div className="flex flex-col items-center gap-12">
           {/* Contact Info */}
           <div className="flex flex-col items-center gap-8">
-            <div className="flex flex-col items-center gap-5">
+            <div className="flex flex-col items-start gap-6">
               <h3 className="font-serif-tc text-2xl font-bold text-brown">
                 聯繫我們
               </h3>
+              {/* Phone */}
               <div className="flex items-center gap-4">
-                <Phone className="h-6 w-6 text-gold" />
-                <div className="flex flex-col gap-1">
+                <Phone className="h-6 w-6 shrink-0 text-gold" />
+                <div className="flex flex-col gap-0.5">
                   <span className="text-[13px] text-tan">服務專線</span>
                   <a
                     href="tel:04-7552815"
@@ -41,12 +42,13 @@ export default function ContactSection() {
                   </a>
                 </div>
               </div>
-              <div className="flex flex-col items-center gap-2">
-                <div className="flex items-center gap-4">
-                  <MessageCircle className="h-6 w-6 text-gold" />
+              {/* LINE */}
+              <div className="flex items-start gap-4">
+                <MessageCircle className="mt-0.5 h-6 w-6 shrink-0 text-gold" />
+                <div className="flex flex-col gap-2">
                   <span className="text-[13px] text-tan">LINE 官方帳號</span>
+                  <img src="https://qr-official.line.me/gs/M_446sdrma_GW.png?oat_content=qr" alt="LINE QR Code" className="w-44" loading="lazy" />
                 </div>
-                <img src="https://qr-official.line.me/gs/M_446sdrma_GW.png?oat_content=qr" alt="LINE QR Code" className="w-48" loading="lazy" />
               </div>
             </div>
 
