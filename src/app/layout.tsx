@@ -5,14 +5,14 @@ import "./globals.css";
 
 const notoSerifTC = Noto_Serif_TC({
   variable: "--font-noto-serif-tc",
-  subsets: ["latin", "chinese-traditional"],
+  subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
 });
 
 const notoSansTC = Noto_Sans_TC({
   variable: "--font-noto-sans-tc",
-  subsets: ["latin", "chinese-traditional"],
+  subsets: ["latin"],
   weight: ["400", "600"],
   display: "swap",
 });
