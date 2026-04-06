@@ -18,7 +18,7 @@ export default function AboutSection() {
             src="/images/IMG_1352_11_11zon.webp"
             alt="和東雕刻佛具行師傅手工雕刻木雕神像過程"
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-500 ease-in-out hover:scale-110"
             sizes="(max-width: 1024px) 100vw, 500px"
             quality={80}
           />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Serif_TC, Noto_Sans_TC } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const notoSerifTC = Noto_Serif_TC({
@@ -28,8 +29,11 @@ export const metadata: Metadata = {
     "佛具訂製",
     "神像雕刻工藝",
     "佛龕桌圍",
-    "祭祀禮器",
-    "石雕藝術",
+    "神像整修",
+    "神像粉身",
+    "神像整理",
+    "神像修復",
+    "佛具販售",
     "和東雕刻佛具行",
   ],
   openGraph: {
@@ -177,6 +181,9 @@ export default function RootLayout({
       >
         {children}
       </body>
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
     </html>
   );
 }
