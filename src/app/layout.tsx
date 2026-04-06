@@ -4,15 +4,15 @@ import "./globals.css";
 
 const notoSerifTC = Noto_Serif_TC({
   variable: "--font-noto-serif-tc",
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  subsets: ["latin", "chinese-traditional"],
+  weight: ["400", "700"],
   display: "swap",
 });
 
 const notoSansTC = Noto_Sans_TC({
   variable: "--font-noto-sans-tc",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  subsets: ["latin", "chinese-traditional"],
+  weight: ["400", "600"],
   display: "swap",
 });
 

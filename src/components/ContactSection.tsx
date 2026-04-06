@@ -46,7 +46,7 @@ export default function ContactSection() {
                   <MessageCircle className="h-6 w-6 text-gold" />
                   <span className="text-[13px] text-tan">LINE 官方帳號</span>
                 </div>
-                <img src="https://qr-official.line.me/gs/M_446sdrma_GW.png?oat_content=qr" alt="LINE QR Code" className="w-48" />
+                <img src="https://qr-official.line.me/gs/M_446sdrma_GW.png?oat_content=qr" alt="LINE QR Code" className="w-48" loading="lazy" />
               </div>
             </div>
 

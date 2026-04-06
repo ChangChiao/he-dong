@@ -86,21 +86,11 @@ export default function EmblaCarouselThumbnails({ slides }: Props) {
               style={{ flexBasis: "100%" }}
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden">
-                {/* Blurred background for portrait images */}
-                <Image
-                  src={slide.src}
-                  alt=""
-                  fill
-                  className="object-cover scale-110 blur-xl brightness-75"
-                  sizes="(max-width: 768px) 100vw, 80vw"
-                  aria-hidden
-                />
-                {/* Main image with contain */}
                 <Image
                   src={slide.src}
                   alt={slide.alt}
                   fill
-                  className="object-contain relative"
+                  className="object-contain"
                   sizes="(max-width: 768px) 100vw, 80vw"
                   priority={i === 0}
                 />
