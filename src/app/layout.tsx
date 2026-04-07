@@ -60,6 +60,11 @@ export const metadata: Metadata = {
       "創立於1950年，專營手工木雕神像、佛龕桌圍。精選原木手工雕刻，量身訂製。",
     images: ["https://www.hedong888.com/images/og_image.png"],
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   robots: {
     index: true,
     follow: true,
