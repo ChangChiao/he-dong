@@ -20,7 +20,7 @@ const notoSansTC = Noto_Sans_TC({
 export const metadata: Metadata = {
   title: "和東雕刻佛具行｜彰化和美神像雕刻・佛具店推薦｜傳承三代匠人工藝",
   description:
-    "和東雕刻佛具行創立於1950年，專營手工木雕神像、石雕藝術、佛龕桌圍、祭祀禮器。彰化和美在地老店，傳承三代職人工藝，精選原木手工雕刻，量身訂製。",
+    "和東雕刻佛具行創立於1950年，專營手工木雕神像、佛龕桌圍、祭祀禮器。彰化和美在地老店，傳承三代職人工藝，精選原木手工雕刻，量身訂製。",
   keywords: [
     "彰化神像雕刻",
     "和美佛具店推薦",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "和東雕刻佛具行｜彰化和美神像雕刻・傳承三代匠人工藝",
     description:
-      "創立於1950年，專營手工木雕神像、石雕藝術、佛龕桌圍。精選原木手工雕刻，量身訂製。",
+      "創立於1950年，專營手工木雕神像、佛龕桌圍。精選原木手工雕刻，量身訂製。",
     locale: "zh_TW",
     type: "website",
     siteName: "和東雕刻佛具行",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "和東雕刻佛具行｜彰化和美神像雕刻・傳承三代匠人工藝",
     description:
-      "創立於1950年，專營手工木雕神像、石雕藝術、佛龕桌圍。精選原木手工雕刻，量身訂製。",
+      "創立於1950年，專營手工木雕神像、佛龕桌圍。精選原木手工雕刻，量身訂製。",
     images: ["https://www.hedong888.com/images/og_image.png"],
   },
   robots: {
@@ -86,7 +86,7 @@ export default function RootLayout({
               "@id": "https://www.hedong888.com/#store",
               name: "和東雕刻佛具行",
               description:
-                "傳承三代職人工藝，專營手工木雕神像、石雕藝術、佛龕桌圍、祭祀禮器",
+                "傳承三代職人工藝，專營手工木雕神像、佛龕桌圍、祭祀禮器",
               url: "https://www.hedong888.com",
               image: "https://www.hedong888.com/images/og_image.png",
               logo: "https://www.hedong888.com/images/og_image.png",
