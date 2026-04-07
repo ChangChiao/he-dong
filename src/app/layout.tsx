@@ -140,6 +140,12 @@ export default function RootLayout({
                       image:
                         "https://www.hedong888.com/images/601538989.145322_1_11zon.webp",
                       material: "精選原木",
+                      offers: {
+                        "@type": "Offer",
+                        availability: "https://schema.org/InStock",
+                        priceCurrency: "TWD",
+                        seller: { "@type": "Organization", name: "和東雕刻佛具行" },
+                      },
                     },
                   },
                   {
@@ -151,6 +157,12 @@ export default function RootLayout({
                       image:
                         "https://www.hedong888.com/images/IMG_0390_5_11zon.webp",
                       material: "精選原木",
+                      offers: {
+                        "@type": "Offer",
+                        availability: "https://schema.org/InStock",
+                        priceCurrency: "TWD",
+                        seller: { "@type": "Organization", name: "和東雕刻佛具行" },
+                      },
                     },
                   },
                   {
@@ -162,6 +174,12 @@ export default function RootLayout({
                       image:
                         "https://www.hedong888.com/images/IMG_1080_9_11zon.webp",
                       material: "精選原木",
+                      offers: {
+                        "@type": "Offer",
+                        availability: "https://schema.org/InStock",
+                        priceCurrency: "TWD",
+                        seller: { "@type": "Organization", name: "和東雕刻佛具行" },
+                      },
                     },
                   },
                   {
@@ -173,6 +191,12 @@ export default function RootLayout({
                       image:
                         "https://www.hedong888.com/images/IMG_1936_15_11zon.webp",
                       material: "精選原木",
+                      offers: {
+                        "@type": "Offer",
+                        availability: "https://schema.org/InStock",
+                        priceCurrency: "TWD",
+                        seller: { "@type": "Organization", name: "和東雕刻佛具行" },
+                      },
                     },
                   },
                 ],
