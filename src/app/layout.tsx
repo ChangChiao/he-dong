@@ -22,7 +22,12 @@ export const metadata: Metadata = {
   description:
     "和東雕刻佛具行創立於1950年，專營手工木雕神像、佛龕桌圍、祭祀禮器。彰化和美在地老店，傳承三代職人工藝，精選原木手工雕刻，量身訂製。",
   keywords: [
+    "彰化神像",
+    "彰化佛具",
+    "彰化神像店",
+    "彰化佛具店",
     "彰化神像雕刻",
+    "彰化和美佛具",
     "和美佛具店推薦",
     "手工木雕神像",
     "精選原木神像",
@@ -143,6 +148,7 @@ export default function RootLayout({
                       offers: {
                         "@type": "Offer",
                         availability: "https://schema.org/InStock",
+                        price: "0",
                         priceCurrency: "TWD",
                         seller: { "@type": "Organization", name: "和東雕刻佛具行" },
                       },
@@ -160,6 +166,7 @@ export default function RootLayout({
                       offers: {
                         "@type": "Offer",
                         availability: "https://schema.org/InStock",
+                        price: "0",
                         priceCurrency: "TWD",
                         seller: { "@type": "Organization", name: "和東雕刻佛具行" },
                       },
@@ -177,6 +184,7 @@ export default function RootLayout({
                       offers: {
                         "@type": "Offer",
                         availability: "https://schema.org/InStock",
+                        price: "0",
                         priceCurrency: "TWD",
                         seller: { "@type": "Organization", name: "和東雕刻佛具行" },
                       },
@@ -194,6 +202,7 @@ export default function RootLayout({
                       offers: {
                         "@type": "Offer",
                         availability: "https://schema.org/InStock",
+                        price: "0",
                         priceCurrency: "TWD",
                         seller: { "@type": "Organization", name: "和東雕刻佛具行" },
                       },
