@@ -48,15 +48,6 @@ export default function HeroSection() {
           彰化和美・三代傳承・手工木雕神像
         </p>
 
-        <p
-          className="animate-fade-in-up max-w-[600px] text-base leading-[1.8] text-tan-light md:text-lg"
-          style={{ animationDelay: "0.85s" }}
-        >
-          傳承工藝，誠心禮佛
-          <br className="hidden md:block" />
-          和東雕刻佛具行 — 真材實料・細膩工法
-        </p>
-
         <div
           className="animate-fade-in-up flex flex-col gap-4 sm:flex-row sm:gap-6"
           style={{ animationDelay: "1.1s" }}
