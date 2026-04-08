@@ -42,6 +42,13 @@ export default function HeroSection() {
         </p>
 
         <p
+          className="animate-fade-in-up text-sm tracking-[3px] text-tan-light md:text-base"
+          style={{ animationDelay: "0.725s" }}
+        >
+          彰化和美・三代傳承・手工木雕神像
+        </p>
+
+        <p
           className="animate-fade-in-up max-w-[600px] text-base leading-[1.8] text-tan-light md:text-lg"
           style={{ animationDelay: "0.85s" }}
         >
