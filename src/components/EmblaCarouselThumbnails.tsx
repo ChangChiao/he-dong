@@ -65,7 +65,6 @@ export default function EmblaCarouselThumbnails({ slides }: Props) {
 
   useEffect(() => {
     if (!emblaMainApi) return;
-    onSelect();
     emblaMainApi.on("select", onSelect);
     emblaMainApi.on("reInit", onSelect);
     return () => {

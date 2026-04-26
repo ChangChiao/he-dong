@@ -20,37 +20,40 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="flex flex-col lg:flex-row lg:h-[80vh]">
-      {services.map((service) => (
-        <div
-          key={service.title}
-          className="relative flex flex-1 min-h-[400px] items-center justify-center overflow-hidden"
-        >
-          {/* Background image */}
-          <Image
-            src={service.src}
-            alt={service.title}
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 34vw"
-            quality={90}
-          />
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black/50" />
+    <section id="services" className="scroll-mt-16">
+      <h2 className="sr-only">神像雕刻與佛具服務</h2>
+      <div className="flex flex-col lg:h-[80vh] lg:flex-row">
+        {services.map((service) => (
+          <div
+            key={service.title}
+            className="relative flex min-h-[400px] flex-1 items-center justify-center overflow-hidden"
+          >
+            {/* Background image */}
+            <Image
+              src={service.src}
+              alt={service.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 34vw"
+              quality={90}
+            />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/50" />
 
-          {/* Content */}
-          <div className="relative z-10 flex flex-col items-center gap-8 px-6 text-center">
-            <h2 className="font-serif-tc text-6xl font-bold tracking-[8px] text-cream-dark lg:text-7xl xl:text-8xl">
-              {service.title}
-            </h2>
-            <div className="border border-gold/50 px-6 py-3">
-              <p className="text-sm tracking-[1px] text-tan-light lg:text-xs xl:text-sm">
-                {service.subtitle}
-              </p>
+            {/* Content */}
+            <div className="relative z-10 flex flex-col items-center gap-8 px-6 text-center">
+              <h3 className="font-serif-tc text-6xl font-bold tracking-[8px] text-cream-dark lg:text-7xl xl:text-8xl">
+                {service.title}
+              </h3>
+              <div className="border border-gold/50 px-6 py-3">
+                <p className="text-sm tracking-[1px] text-tan-light lg:text-xs xl:text-sm">
+                  {service.subtitle}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 }

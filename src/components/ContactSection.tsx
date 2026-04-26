@@ -1,4 +1,5 @@
-import { Phone, MessageCircle, Facebook, Instagram, Youtube } from "lucide-react";
+import Image from "next/image";
+import { Phone, MessageCircle } from "lucide-react";
 
 export default function ContactSection() {
   return (
@@ -47,7 +48,13 @@ export default function ContactSection() {
                 <MessageCircle className="mt-0.5 h-6 w-6 shrink-0 text-gold" />
                 <div className="flex flex-col gap-2">
                   <span className="text-[13px] text-tan">LINE 官方帳號</span>
-                  <img src="https://qr-official.line.me/gs/M_446sdrma_GW.png?oat_content=qr" alt="LINE QR Code" className="w-44" loading="lazy" />
+                  <Image
+                    src="https://qr-official.line.me/gs/M_446sdrma_GW.png?oat_content=qr"
+                    alt="和東雕刻佛具行 LINE 官方帳號 QR Code"
+                    width={176}
+                    height={176}
+                    className="w-44"
+                  />
                 </div>
               </div>
             </div>

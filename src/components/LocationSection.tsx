@@ -1,4 +1,4 @@
-import { MapPin, Clock3, Car } from "lucide-react";
+import { MapPin, Clock3 } from "lucide-react";
 
 const locationInfo = [
   {

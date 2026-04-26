@@ -31,21 +31,21 @@ export default function HeroSection() {
           className="animate-fade-in-up font-serif-tc text-4xl font-bold tracking-[4px] text-cream-dark md:text-6xl lg:text-[72px] lg:tracking-[8px]"
           style={{ animationDelay: "0.35s" }}
         >
-          匠心雕琢，傳遞神聖
+          和東雕刻佛具行
         </h1>
 
         <p
           className="animate-fade-in-up font-serif-tc text-xl tracking-[6px] text-gold md:text-2xl lg:text-4xl lg:tracking-[12px]"
           style={{ animationDelay: "0.6s" }}
         >
-          和東雕刻佛具行
+          彰化和美手工木雕神像
         </p>
 
         <p
           className="animate-fade-in-up text-sm tracking-[3px] text-tan-light md:text-base"
           style={{ animationDelay: "0.725s" }}
         >
-          彰化和美・三代傳承・手工木雕神像
+          匠心雕琢・三代傳承・佛具神像訂製整修
         </p>
 
         <div
