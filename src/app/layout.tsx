@@ -18,6 +18,7 @@ const notoSansTC = Noto_Sans_TC({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.hedong888.com"),
   title: "和東雕刻佛具行｜彰化和美神像雕刻・佛具店推薦｜傳承三代匠人工藝",
   description:
     "和東雕刻佛具行創立於1950年，專營手工木雕神像、佛龕桌圍、祭祀禮器。彰化和美在地老店，傳承三代職人工藝，精選原木手工雕刻，量身訂製。",
@@ -92,7 +93,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Store",
+              "@type": ["Store", "LocalBusiness"],
               "@id": "https://www.hedong888.com/#store",
               name: "和東雕刻佛具行",
               description:
@@ -100,6 +101,10 @@ export default function RootLayout({
               url: "https://www.hedong888.com",
               image: "https://www.hedong888.com/images/og_image.png",
               logo: "https://www.hedong888.com/images/og_image.png",
+              sameAs: [
+                "https://share.google/rmSbrpdS4WWdIzkmO",
+                "https://lin.ee/8jQiAOa",
+              ],
               priceRange: "$$",
               currenciesAccepted: "TWD",
               paymentAccepted: "Cash, Credit Card",
@@ -145,13 +150,7 @@ export default function RootLayout({
                       image:
                         "https://www.hedong888.com/images/601538989.145322_1_11zon.webp",
                       material: "精選原木",
-                      offers: {
-                        "@type": "Offer",
-                        availability: "https://schema.org/InStock",
-                        price: "0",
-                        priceCurrency: "TWD",
-                        seller: { "@type": "Organization", name: "和東雕刻佛具行" },
-                      },
+                      brand: { "@type": "Brand", name: "和東雕刻佛具行" },
                     },
                   },
                   {
@@ -163,13 +162,7 @@ export default function RootLayout({
                       image:
                         "https://www.hedong888.com/images/IMG_0390_5_11zon.webp",
                       material: "精選原木",
-                      offers: {
-                        "@type": "Offer",
-                        availability: "https://schema.org/InStock",
-                        price: "0",
-                        priceCurrency: "TWD",
-                        seller: { "@type": "Organization", name: "和東雕刻佛具行" },
-                      },
+                      brand: { "@type": "Brand", name: "和東雕刻佛具行" },
                     },
                   },
                   {
@@ -181,13 +174,7 @@ export default function RootLayout({
                       image:
                         "https://www.hedong888.com/images/IMG_1080_9_11zon.webp",
                       material: "精選原木",
-                      offers: {
-                        "@type": "Offer",
-                        availability: "https://schema.org/InStock",
-                        price: "0",
-                        priceCurrency: "TWD",
-                        seller: { "@type": "Organization", name: "和東雕刻佛具行" },
-                      },
+                      brand: { "@type": "Brand", name: "和東雕刻佛具行" },
                     },
                   },
                   {
@@ -199,13 +186,7 @@ export default function RootLayout({
                       image:
                         "https://www.hedong888.com/images/IMG_1936_15_11zon.webp",
                       material: "精選原木",
-                      offers: {
-                        "@type": "Offer",
-                        availability: "https://schema.org/InStock",
-                        price: "0",
-                        priceCurrency: "TWD",
-                        seller: { "@type": "Organization", name: "和東雕刻佛具行" },
-                      },
+                      brand: { "@type": "Brand", name: "和東雕刻佛具行" },
                     },
                   },
                 ],
