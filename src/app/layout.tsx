@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Serif_TC, Noto_Sans_TC } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
@@ -16,6 +16,10 @@ const notoSansTC = Noto_Sans_TC({
   weight: ["400", "600"],
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  themeColor: "#1A1612",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.hedong888.com"),
@@ -52,7 +56,7 @@ export const metadata: Metadata = {
     url: "https://www.hedong888.com",
     images: [
       {
-        url: "https://www.hedong888.com/images/og_image.png",
+        url: "https://www.hedong888.com/images/og_image.jpg",
         width: 1200,
         height: 630,
         alt: "和東雕刻佛具行｜彰化和美傳承三代匠人工藝",
@@ -64,7 +68,7 @@ export const metadata: Metadata = {
     title: "和東雕刻佛具行｜彰化和美神像雕刻・傳承三代匠人工藝",
     description:
       "創立於1950年，專營手工木雕神像、佛龕桌圍。精選原木手工雕刻，量身訂製。",
-    images: ["https://www.hedong888.com/images/og_image.png"],
+    images: ["https://www.hedong888.com/images/og_image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
@@ -99,8 +103,8 @@ export default function RootLayout({
               description:
                 "傳承三代職人工藝，專營手工木雕神像、佛龕桌圍、祭祀禮器",
               url: "https://www.hedong888.com",
-              image: "https://www.hedong888.com/images/og_image.png",
-              logo: "https://www.hedong888.com/images/og_image.png",
+              image: "https://www.hedong888.com/images/og_image.jpg",
+              logo: "https://www.hedong888.com/images/logo.png",
               sameAs: [
                 "https://share.google/rmSbrpdS4WWdIzkmO",
                 "https://lin.ee/8jQiAOa",
@@ -139,54 +143,54 @@ export default function RootLayout({
               foundingDate: "1950",
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
-                name: "佛具與神像作品",
+                name: "神像雕刻與佛具服務",
                 itemListElement: [
                   {
                     "@type": "Offer",
+                    priceCurrency: "TWD",
+                    price: "38000",
+                    availability: "https://schema.org/InStock",
+                    url: "https://www.hedong888.com",
                     itemOffered: {
-                      "@type": "Product",
-                      name: "手工木雕神像",
-                      description: "精選原木手工雕刻神像，量身訂製各尺寸",
+                      "@type": "Service",
+                      name: "神像製作",
+                      description:
+                        "遵循古法標準規格，精選原木手工雕刻神像，量身訂製各尺寸",
                       image:
-                        "https://www.hedong888.com/images/601538989.145322_1_11zon.webp",
-                      material: "精選原木",
-                      brand: { "@type": "Brand", name: "和東雕刻佛具行" },
+                        "https://www.hedong888.com/images/create.webp",
+                      areaServed: "台灣",
                     },
                   },
                   {
                     "@type": "Offer",
+                    priceCurrency: "TWD",
+                    price: "16800",
+                    availability: "https://schema.org/InStock",
+                    url: "https://www.hedong888.com",
                     itemOffered: {
-                      "@type": "Product",
-                      name: "木雕佛像",
-                      description: "精選原木手工雕刻佛像，精工細琢",
+                      "@type": "Service",
+                      name: "神像整修",
+                      description:
+                        "神像整理、粉身、修復，以專業技法重現神尊初成時的法相",
                       image:
-                        "https://www.hedong888.com/images/IMG_0390_5_11zon.webp",
-                      material: "精選原木",
-                      brand: { "@type": "Brand", name: "和東雕刻佛具行" },
+                        "https://www.hedong888.com/images/draw.webp",
+                      areaServed: "台灣",
                     },
                   },
                   {
                     "@type": "Offer",
+                    priceCurrency: "TWD",
+                    price: "6000",
+                    availability: "https://schema.org/InStock",
+                    url: "https://www.hedong888.com",
                     itemOffered: {
-                      "@type": "Product",
-                      name: "神像雕刻",
-                      description: "手工雕刻神像，莊嚴精緻",
+                      "@type": "Service",
+                      name: "佛具販售",
+                      description:
+                        "提供佛龕桌圍、祭祀禮器等多樣化精選佛具",
                       image:
-                        "https://www.hedong888.com/images/IMG_1080_9_11zon.webp",
-                      material: "精選原木",
-                      brand: { "@type": "Brand", name: "和東雕刻佛具行" },
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "Product",
-                      name: "佛龕桌圍",
-                      description: "精雕細琢佛龕與桌圍，量身訂製",
-                      image:
-                        "https://www.hedong888.com/images/IMG_1936_15_11zon.webp",
-                      material: "精選原木",
-                      brand: { "@type": "Brand", name: "和東雕刻佛具行" },
+                        "https://www.hedong888.com/images/shop.webp",
+                      areaServed: "台灣",
                     },
                   },
                 ],
