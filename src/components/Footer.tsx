@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { navItems } from "@/constants/navigation";
 
 export default function Footer() {
@@ -34,7 +35,13 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} 和東雕刻佛具行 版權所有
           </p>
           <p className="text-[13px] text-brown-light">
-            隱私權政策｜使用條款
+            <Link href="/privacy" className="transition-colors hover:text-gold">
+              隱私權政策
+            </Link>
+            ｜
+            <Link href="/terms" className="transition-colors hover:text-gold">
+              使用條款
+            </Link>
           </p>
         </div>
       </div>
