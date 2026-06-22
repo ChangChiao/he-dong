@@ -56,6 +56,9 @@ export default function EmblaCarouselThumbnails({ slides }: Props) {
     [emblaMainApi, emblaThumbsApi]
   );
 
+  const scrollPrev = useCallback(() => emblaMainApi?.scrollPrev(), [emblaMainApi]);
+  const scrollNext = useCallback(() => emblaMainApi?.scrollNext(), [emblaMainApi]);
+
   const onSelect = useCallback(() => {
     if (!emblaMainApi || !emblaThumbsApi) return;
     const index = emblaMainApi.selectedScrollSnap();
@@ -76,6 +79,7 @@ export default function EmblaCarouselThumbnails({ slides }: Props) {
   return (
     <div className="w-full">
       {/* Main carousel */}
+      <div className="relative">
       <div className="overflow-hidden rounded-xl" ref={emblaMainRef}>
         <div className="flex">
           {slides.map((slide, i) => (
@@ -108,6 +112,29 @@ export default function EmblaCarouselThumbnails({ slides }: Props) {
             </div>
           ))}
         </div>
+      </div>
+
+        {/* Prev / Next arrows */}
+        <button
+          type="button"
+          onClick={scrollPrev}
+          aria-label="上一張"
+          className="absolute left-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-black/40 text-cream-dark backdrop-blur-sm transition hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          onClick={scrollNext}
+          aria-label="下一張"
+          className="absolute right-3 top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-black/40 text-cream-dark backdrop-blur-sm transition hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
       </div>
 
       {/* Thumbnails */}
